@@ -14,28 +14,87 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="block block--dark block--skewed-left hero">
-      <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="block__heading">Prolink Tech Center</h1>
-          <p class="hero__tagline">
-            Join Prolink Tech Center today and embrace the future of tech
-            education!
-          </p>
-          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
-        </header>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="/images/banner.webp 1X, /images/banner@2x.webp 2x"
-          />
-          <img class="hero__image" src="/images/banner.png" alt="" />
-          <source
-            type="image/png"
-            srcset="/images/banner.png 1X, /images/banner@2x.png 2x"
-          />
-          <img class="hero__image" src="/images/banner.png" alt="" />
-        </picture>
+    <section class="block container block-courses">
+      <header class="block__header">
+        <h2>Our Top Training courses</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, fuga?
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Search your interesting course here"
+        />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="/images/sprite.svg#search"></use>
+          </svg>
+          search
+        </button>
+      </div>
+      <div class="grid grid--1x3 block-plans">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">10$</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% off</span>
+              <span class="plan__description">Easy to start</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li>professional</li>
+                <li>star</li>
+                <li>comet</li>
+                <li>sky</li>
+              </ul>
+              <button class="btn btn--outline btn--block">buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">10$</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--primary badge--small">10% off</span>
+              <span class="plan__description">Easy to start</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li>professional</li>
+                <li>star</li>
+                <li>comet</li>
+                <li>sky</li>
+              </ul>
+              <button class="btn btn--outline btn--block">buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">10$</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% off</span>
+              <span class="plan__description">Easy to start</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li>professional</li>
+                <li>star</li>
+                <li>comet</li>
+                <li>sky</li>
+              </ul>
+              <button class="btn btn--outline btn--block">buy now</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <script src="main.js"></script>
