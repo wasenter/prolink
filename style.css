@@ -536,11 +536,11 @@ a {
   align-items: center;
 }
 .logo {
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 0 1rem;
-  width: 150px;
+  width: 200px;
   height: 100px;
-  transform: translateY(2px);
+  transform: translateY(1px);
 }
 .nav__list {
   width: 100%;
@@ -620,4 +620,22 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 4rem auto;
+}
+/* feature */
+.feature__heading {
+  margin: 1rem 0;
+}
+/* feature */
+.feature__heading {
+  margin: 1rem 0;
+}
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+.feature__image {
+  width: 100%;
 }
