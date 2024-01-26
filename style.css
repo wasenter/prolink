@@ -164,7 +164,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -239,6 +239,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 0;
@@ -315,7 +316,7 @@ a {
 }
 
 .plan--popular .card__header::before {
-  content: url(../images/popular.svg);
+  content: url(/images/popular.svg);
   width: 40px;
   display: inline-block;
   position: absolute;
@@ -330,7 +331,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .plan__name {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   .plan__price {
@@ -378,7 +379,7 @@ a {
   font-style: normal;
   margin-bottom: 0;
 }
-.quote__organization {
+p.quote__organization {
   color: var(--color-heading);
   opacity: 0.4;
   font-size: 2rem;
@@ -418,6 +419,7 @@ a {
 }
 .testimonial__image > img {
   width: 100%;
+  object-fit: cover;
 }
 .testimonial__image > .icon-container {
   position: absolute;
@@ -431,8 +433,7 @@ a {
   }
 }
 .callout {
-  padding: 4rem;
-  border-radius: 5px;
+  padding: 6rem;
 }
 .callout--primary {
   background: var(--color-primary);
@@ -492,7 +493,7 @@ a {
 }
 /* Blocks */
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 3rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -516,7 +517,7 @@ a {
 }
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
@@ -538,8 +539,8 @@ a {
 }
 .logo {
   margin: 1rem 0;
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 70px;
   transform: translateY(1px);
 }
 .nav__list {
@@ -551,7 +552,7 @@ a {
   border-bottom: 1px solid #222;
 }
 .nav__list li > a {
-  color: #d2d0db;
+  color: #777;
   transition: color 0.3s;
 }
 .nav__list li > a:hover {
@@ -605,10 +606,10 @@ a {
   }
 }
 /* course block */
-.block-courses .input-group {
+.block .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
-  margin: 4rem auto;
+  margin: 3rem auto;
   max-width: 700px;
 }
 .block-plans {
@@ -625,44 +626,29 @@ a {
 .feature__heading {
   margin: 1rem 0;
 }
-/* feature */
-.feature__heading {
-  margin: 1rem 0;
-}
 .feature {
-  gap: 4rem 2rem;
-  margin: 12rem 0;
+  gap: 4rem 4rem;
+  margin: 4rem 1rem;
 }
 .feature:first-of-type {
   margin-top: 6rem;
 }
 .feature__image {
   width: 100%;
+  border-radius: 10px;
 }
 /* Showcase Block */
 .block-showcase__image > img {
   width: 100%;
+  border-radius: 10px;
 }
-.showcase__header {
-  color: #fff;
-}
-.media__body > p,
-h3 {
-  color: #fff;
+.block-showcase {
+  gap: 4rem 2rem;
 }
 
 @media screen and (min-width: 768px) {
   .block-showcase .grid {
     grid-template-columns: 50% 50%;
-  }
-
-  .block-showcase__image {
-    justify-self: end;
-  }
-
-  .block-showcase__image > img {
-    width: auto;
-    max-width: 700px;
   }
 }
 /* footer */

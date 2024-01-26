@@ -1,0 +1,10 @@
+article :last-child {
+  font-size: xx-large;
+  font-style: italic;
+}
+ul li:nth-child(odd) {
+  color: dodgerblue;
+}
+a:active {
+  color: dodgerblue;
+}
